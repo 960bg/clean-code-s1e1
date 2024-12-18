@@ -107,13 +107,8 @@ var taskIncomplete=function(){
     bindTaskEvents(listItem,taskCompleted);
 }
 
-var ajaxRequest=function(){
-}
-
 //Controls addTask function.
-addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
-addButton.addEventListener("click",ajaxRequest);
 
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     //select ListItems children
