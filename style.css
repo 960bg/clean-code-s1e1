@@ -1,8 +1,8 @@
 /* Basic Style */
 .body {
-  background-color: #f8f8f8;
-  color: #333;
   font-family: Lato, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
 }
 
 .wrap{
@@ -45,6 +45,7 @@ ul {
 
 li, 
 h3 {
+  box-sizing: border-box;
   list-style: none;
 }
 
@@ -54,12 +55,12 @@ button {
 }
 
 .bt {
-  background: none;
-  border: 0;
-  color: #888;
-  font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #888;
+  background: none;
+  border: 0;
   cursor: pointer;
 }
 
@@ -69,27 +70,27 @@ button {
 
 /* Heading */
 .tasks-title {
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
   padding: 30px 0 10px;
   margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
   text-transform: uppercase;
+  border-bottom: 2px solid #333;
 }
 
 .item__input {
   flex-grow: 1;
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
+  margin: 0;
   font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
   color: #888;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
 .item__input:focus {
@@ -108,13 +109,12 @@ button {
 
 /* Task list */
 .tasks-list__item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
 }
 
 .tasks-list__item > * {
@@ -127,10 +127,9 @@ button {
 
 .item__label {
   flex-grow: 1;
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
   width: 226px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
 .item__input {
