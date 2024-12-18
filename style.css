@@ -1,7 +1,16 @@
+/* Variables */
+:root{
+  --font-family-main: Lato, sans-serif;
+  --font-family-second: fantasy, cursive;
+  --color-main: #333;
+  --color-bt: #888;
+  --font-size-input-label: 18px;
+}
+
 /* Basic Style */
 .body {
-  font-family: Lato, sans-serif;
-  color: #333;
+  font-family: var(--font-family-main);
+  color: var(--color-main);
   background-color: #f8f8f8;
 }
 
@@ -20,7 +29,7 @@
 }
 
 .header__link {
-  font-family: fantasy, cursive;
+  font-family: var(--font-family-second);
 }
 
 @media (max-width: 768px) {
@@ -56,9 +65,9 @@ button {
 
 .bt {
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: var(--font-family-main);
   font-size: 15px;
-  color: #888;
+  color: var(--color-bt);
   background: none;
   border: 0;
   cursor: pointer;
@@ -74,9 +83,9 @@ button {
   margin: 0;
   font-size: 15px;
   font-weight: 700;
-  color: #333;
+  color: var(--color-main);
   text-transform: uppercase;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--color-main);
 }
 
 .item__input {
@@ -85,17 +94,17 @@ button {
   height: 21px;
   padding: 0 9px;
   margin: 0;
-  font-family: Lato, sans-serif;
-  font-size: 18px;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-input-label);
   line-height: 18px;
-  color: #888;
+  color: var(--color-bt);
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
 }
 
 .item__input:focus {
-  color: #333;
+  color: var(--color-main);
 }
 
 /* New Task */
@@ -130,7 +139,7 @@ button {
   flex-grow: 1;
   width: 226px;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: var(--font-size-input-label);
 }
 
 .bt-delete img {
@@ -146,7 +155,7 @@ button {
 /* Completed */
 .complete-tasks__list .item__label {
   text-decoration: line-through;
-  color: #888;
+  color: var(--color-bt);
 }
 
 /* Edit Task */
