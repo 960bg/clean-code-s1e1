@@ -113,7 +113,7 @@ input,button{
   width: 226px;
 }
 .item__input {
-  width: 226px
+  width: 226px;
 }
 .bt-delete img {
   height: 2em;
@@ -126,19 +126,19 @@ input,button{
 
 /* Completed */
 .complete-tasks__list .item__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .tasks-list__item .item__input {
-  display: none
+  display: none;
 }
 
 /* ul li */
 .edit-mode .item__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 /* ul li */
