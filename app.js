@@ -33,6 +33,7 @@ function createNewTaskElement(taskString) {
   deleteButton.className = 'bt bt-delete';
   deleteButtonImg.src = './remove.svg';
   deleteButtonImg.setAttribute('alt', 'delete');
+  deleteButtonImg.className = 'bt-delete__img';
   deleteButton.appendChild(deleteButtonImg);
 
   listItem.appendChild(checkBox);
