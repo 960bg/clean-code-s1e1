@@ -52,8 +52,8 @@ ul {
   padding: 0;
 }
 
-li, 
-h3 {
+li,
+p {
   box-sizing: border-box;
   list-style: none;
 }
