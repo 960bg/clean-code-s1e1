@@ -142,13 +142,13 @@ button {
   font-size: var(--font-size-input-label);
 }
 
-.bt-delete img {
+.bt-delete .bt-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.bt-delete img:hover {
+.bt-delete .bt-delete__img:hover {
   transform: rotateZ(0);
 }
 
@@ -170,6 +170,6 @@ button {
 }
 
 /* ul li */
-.edit-mode label {
+.edit-mode .item__label {
   display: none;
 }
